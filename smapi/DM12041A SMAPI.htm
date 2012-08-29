@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+		<script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+		<title>DM12041A | Social Media API Examples</title>
+	</head>
+
+	<body onload="prettyPrint()">
+		<div class="page_wrap">
+			<header>
+				<h1>Social Media Accounts and Examples</h1>
+				<nav>
+					<ul id="navigation">
+						<li>
+							<a href="#accounts">Accounts</a>
+						</li>
+						<li>
+							<a href="#facebook">Facebook</a>
+						</li>
+						<li>
+							<a href="#tumblr">Tumblr</a>
+						</li>
+						<li>
+							<a href="#twitter">Twitter</a>
+						</li>
+						<li>
+							<a href="#soundcloud">Soundcloud</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div id="#content">
+			<p>
+				These are dummy accounts that are filled with arbitrary content for use in class assignments. Feel free to use them in conjunction with the dev tools and API's for each respective brand. If you want to make any changes or add any content for testing purposes then feel free to do so as long as it is not offensive or illegal. Any infringements will be banned/reported.
+			</p>
+			<div class="CSSTableGenerator shadow" >
+				<table >
+					<tr>
+						<td>Service</td>
+						<td >URL</td>
+						<td>Username</td>
+						<td>Password</td>
+					</tr>
+					<tr>
+						<td >Gmail</td>
+						<td><a href="http://www.gmail.com">www.gmail.com</a></td>
+						<td>DM12041A@gmail.com</td>
+						<td>Retarded23</td>
+					</tr>
+					<tr>
+						<td >Github</td>
+						<td><a href="http://www.github.com">www.github.com</a></td>
+						<td>DM12041A@gmail.com</td>
+						<td>Retarded23</td>
+					</tr>
+					<tr>
+						<td >Twitter</td>
+						<td><a href="http://www.twitter.com">www.twitter.com</a></td>
+						<td>DM12041A@gmail.com</td>
+						<td>Retarded23</td>
+					</tr>
+					<tr>
+						<td >Soundcloud</td>
+						<td><a href="http://www.soundcloud.com">www.soundcloud.com</a></td>
+						<td>DM12041A@gmail.com</td>
+						<td>Retarded23</td>
+					</tr>
+					<tr>
+						<td >Pinterest</td>
+						<td><a href="http://www.pinterest.com">www.pinterest.com</a></td>
+						<td>DM12041A@gmail.com</td>
+						<td>Retarded23</td>
+					</tr>
+				</table>
+			</div>
+			<h2>Twitter</h2>
+			<p>
+				Main article found &nbsp;<a href="https://dev.twitter.com/docs/twitter-for-websites">here</a>
+				<h3>Embedding Tweets</h3>
+			<p>
+				Easy way to embed in to websites via cupy and paste.Presents it in a simple form and lets viewers retweet, reply, favourite and follow without hassle from the rendered embed.
+			</p>
+			<pre class="left_align prettyprint  lang-html">
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Search API will now always return &quot;real&quot; Twitter user IDs. The with_twitter_user_id parameter is <br />no longer necessary. An era has ended. ^TS&lt;/p&gt;&amp;mdash; Twitter API (@twitterapi)<br />&lt;a href=&quot;https://twitter.com/twitterapi/status/133640144317198338&quot; data-datetime=&quot;2011-11-07T20:21:07+00:00&quot;&gt;November7, 2011&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+<br/>
+</pre>			
+			
+
+
+
+ <footer></footer>
+</div>		</div>
+		<!-- ==========| Script Calls |========== -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	//Calculate the height of <header>
+	//Use outerHeight() instead of height() if have padding
+    var aboveHeight = 87;
+	
+	// when scroll
+    $(window).scroll(function(){
+		
+		//if scrolled down more than the header's height
+        if ($(window).scrollTop() > aboveHeight){
+			
+			// if yes, add "fixed" class to the <nav>
+			// add padding top to the #content (value is same as the height of the nav)
+            $('nav').addClass('fixed').css('top','0').next().css('padding-top','80px');
+        } else {
+			
+			// when scroll up or less than aboveHeight, remove the "fixed" class, and the padding-top
+            $('nav').removeClass('fixed').next().css('padding-right','10px');
+        }
+    });
+});
+</script>
+
+	</body>
+</html>
